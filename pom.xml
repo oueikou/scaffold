@@ -16,10 +16,15 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<spring.version>4.2.6.RELEASE</spring.version>
+		<mybatis.version>3.1.1</mybatis.version>
+		<mybatis-spring.version>1.1.1</mybatis-spring.version>
+		<mysql.version>5.1.21</mysql.version>
+		<druid.version>1.0.13</druid.version>
+		<aspectjweaver.version>1.7.1</aspectjweaver.version>
 		<jetty.plugin.version>9.3.9.v20160517</jetty.plugin.version>
 		<junit.version>4.12</junit.version>
 		<servlet.api.version>2.5</servlet.api.version>
-		<spring.version>4.2.6.RELEASE</spring.version>
 		<log4j.version>1.2.17</log4j.version>
 		<jackson.version>2.7.4</jackson.version>
 		<jstl.version>1.2</jstl.version>
@@ -50,6 +55,7 @@
 			<!-- provided，类似compile，期望JDK、容器或使用者会提供这个依赖。如servlet.jar。 <scope>provided</scope> -->
 			<scope>provided</scope>
 		</dependency>
+		<!-- spring mvc -->
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
@@ -71,6 +77,7 @@
 			<version>${log4j.version}</version>
 		</dependency>
 
+		<!-- jackson -->
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-core</artifactId>
@@ -104,6 +111,35 @@
 			<groupId>commons-codec</groupId>
 			<artifactId>commons-codec</artifactId>
 			<version>1.9</version>
+		</dependency>
+
+		<!-- mybatis -->
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis</artifactId>
+			<version>${mybatis.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.mybatis</groupId>
+			<artifactId>mybatis-spring</artifactId>
+			<version>${mybatis-spring.version}</version>
+		</dependency>
+
+		<!-- mysql -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>${druid.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.aspectj</groupId>
+			<artifactId>aspectjweaver</artifactId>
+			<version>${aspectjweaver.version}</version>
 		</dependency>
 	</dependencies>
 </project>

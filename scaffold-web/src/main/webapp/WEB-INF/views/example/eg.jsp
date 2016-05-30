@@ -6,6 +6,6 @@
 <title>example</title>
 </head>
 <body>
-参数 ：<input type="text" value="${model }" > 
+参数 ：<input type="text" value="${model.name }" > 
 </body>
 </html>
