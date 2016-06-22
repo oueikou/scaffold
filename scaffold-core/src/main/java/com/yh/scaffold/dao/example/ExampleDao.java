@@ -6,6 +6,8 @@
  */
 package com.yh.scaffold.dao.example;
 
+import java.util.List;
+
 import com.yh.scaffold.entity.example.Example;
 
 public interface ExampleDao {
@@ -50,4 +52,6 @@ public interface ExampleDao {
      * @return int 
      */
     int updateByPrimaryKey(Example record);
+    
+    List<Example> selectByParam(Example record);
 }
