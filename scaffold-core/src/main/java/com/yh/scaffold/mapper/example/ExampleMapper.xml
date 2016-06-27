@@ -55,4 +55,19 @@
     set name = #{name,jdbcType=VARCHAR}
     where id = #{id,jdbcType=INTEGER}
   </update>
+  
+  <select id="selectByParam" resultMap="BaseResultMap" parameterType="com.yh.scaffold.entity.example.Example" >
+    select 
+    <include refid="Base_Column_List" />
+    from example
+    <where>
+    1=1
+    <if test="id != null">
+      AND id = #{id,jdbcType=INTEGER}
+    </if>
+    <if test="name != null" >
+      AND name = #{name,jdbcType=VARCHAR}
+    </if>
+    </where>
+  </select>
 </mapper>
