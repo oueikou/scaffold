@@ -13,7 +13,6 @@ public class ExampleServiceImpl implements ExampleService {
 	@Autowired
 	private ExampleDao exampleDao;
 	
-	@Override
 	public Example findById(Integer id) {
 		return exampleDao.selectByPrimaryKey(id);
 	}
