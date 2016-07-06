@@ -23,7 +23,7 @@ public class ExampleController {
 	@Autowired
 	private ExampleService exampleService;
 	
-	@SuppressWarnings({ "rawtypes", "unused", "unchecked" })
+	@SuppressWarnings({ "rawtypes", "unchecked" })
 	@RequestMapping(value="/test", method=RequestMethod.GET)
 	public String test(HttpServletRequest request, ModelMap model){
 		logger.info("test() - start");
