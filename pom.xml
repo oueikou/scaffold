@@ -157,5 +157,16 @@
 			<artifactId>pagehelper</artifactId>
 			<version>${pagehelper.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4.5</version>
+		</dependency>
+		<dependency>
+			<groupId>com.sun.mail</groupId>
+			<artifactId>javax.mail</artifactId>
+			<version>1.5.4</version>
+		</dependency>
+
 	</dependencies>
 </project>

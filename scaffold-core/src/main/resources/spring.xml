@@ -14,5 +14,6 @@ http://www.springframework.org/schema/context/spring-context-4.2.xsd
 	<!-- 自动扫描(自动注入) -->
 	<context:component-scan base-package="com.yh.scaffold.service.*" />
 
-
+	<!-- 统一异常处理 -->
+	<bean id="exceptionHandler" class="com.yh.scaffold.exception.MyExceptionHandler" />
 </beans>

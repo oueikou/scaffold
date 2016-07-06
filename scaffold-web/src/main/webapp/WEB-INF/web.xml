@@ -53,6 +53,20 @@
 		<session-timeout>15</session-timeout>
 	</session-config>
 
+	<!-- 报错返回页面 -->
+	<error-page>
+		<error-code>500</error-code>
+		<location>/WEB-INF/views/common/500.html</location>
+	</error-page>
+	<error-page>
+		<error-code>404</error-code>
+		<location>/WEB-INF/views/common/404.html</location>
+	</error-page>
+	<error-page>
+		<error-code>403</error-code>
+		<location>/WEB-INF/views/common/403.html</location>
+	</error-page>
+
 	<!--log4j 载入 -->
 	<context-param>
 		<param-name>webAppRootKey</param-name>
