@@ -29,6 +29,7 @@
 		<jackson.version>2.7.4</jackson.version>
 		<jstl.version>1.2</jstl.version>
 		<pagehelper.version>4.1.6</pagehelper.version>
+		<freemarker.version>2.3.23</freemarker.version>
 	</properties>
 
 	<repositories>
@@ -82,6 +83,12 @@
 			<artifactId>spring-jdbc</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
@@ -166,6 +173,12 @@
 			<groupId>com.sun.mail</groupId>
 			<artifactId>javax.mail</artifactId>
 			<version>1.5.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.freemarker</groupId>
+			<artifactId>freemarker</artifactId>
+			<version>${freemarker.version}</version>
 		</dependency>
 
 	</dependencies>
