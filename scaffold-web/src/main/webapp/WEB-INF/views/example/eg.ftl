@@ -1,11 +1,10 @@
-<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8" %>
 <!DOCTYPE HTML>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>example</title>
-<script type="text/javascript" src="/js/common/jquery-3.0.0.min.js" ></script>
-<script type="text/javascript" src="/js/common/layer-v2.4/layer/layer.js" ></script>
+<script type="text/javascript" src="${domain}/js/common/jquery-3.0.0.min.js" ></script>
+<script type="text/javascript" src="${domain}/js/common/layer-v2.4/layer/layer.js" ></script>
 <script type="text/javascript">
 function test(){
 	layer.alert('${base}');
